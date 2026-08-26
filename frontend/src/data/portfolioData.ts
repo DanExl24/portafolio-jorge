@@ -97,6 +97,7 @@ export const PROJECTS_DATA: ProjectDetail[] = [
     shortDescription: 'Sistema web para la consulta, analítica y estadísticas de fichas formativas del SENA extraídas y procesadas dinámicamente desde archivos Excel de Google Drive.',
     fullDescription: 'Herramienta especializada en analítica y automatización de datos académicos del SENA. Automatiza la descarga, análisis con OpenPyXL y extracción estructurada a JSON para alimentar dashboards interactivos de rendimiento y estadísticas de fichas formativas.',
     githubUrl: 'https://github.com/DanExl24/Py_autom/tree/agy-v1.1',
+    liveUrl: 'https://pyautom.adsoproject.dev/',
     tags: ['Vue 3', 'TypeScript', 'Python', 'FastAPI', 'PostgreSQL', 'Google Drive API', 'OpenPyXL'],
     architecture: {
       frontend: ['Vue 3', 'Vite', 'Tailwind CSS', 'Pinia'],
