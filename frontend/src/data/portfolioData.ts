@@ -111,6 +111,35 @@ export const PROJECTS_DATA: ProjectDetail[] = [
       'Cálculo de estadísticas automáticas y visualización de métricas clave.',
       'Pipeline de transformación de datos crudos a JSON estructurado y listo para el cliente.'
     ]
+  },
+  {
+    id: 'juicios-evaluativos',
+    title: 'Juicios Evaluativos',
+    shortDescription: 'Sistema integral para la ingesta masiva (Excel/CSV), análisis, trazabilidad curricular y visualización ejecutiva de juicios evaluativos y proyectos formativos del SENA.',
+    fullDescription: 'Juicios Evaluativos es una plataforma integral diseñada para optimizar el seguimiento pedagógico y curricular en el SENA. Cuenta con un módulo de ingesta y validación de archivos masivos (Excel/CSV), un extractor automatizado de proyectos formativos desde PDFs con Python (pdfplumber), base de datos relacional PostgreSQL y dashboards analíticos con Apache ECharts para la toma de decisiones.',
+    githubUrl: 'https://github.com/DanExl24/JuiciosEvaluativos',
+    liveUrl: 'https://juicios-evaluativos-jp.adsoproject.dev/import',
+    tags: ['Vue 3', 'TypeScript', 'Node.js', 'Express', 'PostgreSQL', 'Python', 'Apache ECharts', 'Docker'],
+    architecture: {
+      frontend: ['Vue 3', 'TypeScript', 'Vite', 'Pinia (State Management)', 'Tailwind CSS', 'Apache ECharts (Visualización Analítica)'],
+      backend: ['Node.js', 'Express', 'TypeScript', 'PostgreSQL', 'Zod (Validación de Esquemas)', 'Python (pdfplumber)'],
+      database: ['PostgreSQL'],
+      testing: ['Tests de integración y unitarios de endpoints REST'],
+      dataProcessing: [
+        'Pipeline de ingesta y validación de archivos Excel (.xlsx) y CSV',
+        'Extracción automatizada de mallas curriculares desde documentos PDF con Python (pdfplumber)'
+      ],
+      integrations: [
+        'Nginx Reverse Proxy (/api/)',
+        'Docker (Multi-stage build Node & Nginx)'
+      ]
+    },
+    highlights: [
+      'Ingesta masiva y validación estricta de archivos CSV y Excel de juicios evaluativos.',
+      'Extracción programática de proyectos formativos y competencias desde PDFs con Python.',
+      'Dashboard analítico con métricas de aprobación y semaforización mediante Apache ECharts.',
+      'Arquitectura monorepo desacoplada y containerizada con Docker y Nginx.'
+    ]
   }
 ]
 

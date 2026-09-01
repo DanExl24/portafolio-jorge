@@ -59,6 +59,21 @@
       </svg>
     </div>
 
+    <!-- Juicios Evaluativos (SENA / Ingesta CSV/Excel & Trazabilidad Curricular) -->
+    <div v-else-if="projectId === 'juicios-evaluativos' || projectId === 'juiciosevaluativos'" class="w-full h-full rounded-xl bg-gradient-to-br from-[#0D9488] via-[#059669] to-[#1E3A8A] p-2 flex items-center justify-center shadow-md border border-[#2DD4BF]/40">
+      <svg class="w-full h-full text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+        <!-- Assessment / Sheet Form Container -->
+        <rect x="4" y="3" width="16" height="18" rx="2.5" fill="rgba(255,255,255,0.12)" stroke="currentColor" />
+        <!-- Clip / Header on top -->
+        <path d="M9 3h6v2.5a1 1 0 01-1 1h-4a1 1 0 01-1-1V3z" fill="currentColor" stroke="none" />
+        <!-- Evaluation Checkmark & Metrics Bar Chart inside -->
+        <path d="M7.5 10.5l2 2 4.5-4.5" stroke="#34D399" stroke-width="2" />
+        <line x1="7.5" y1="16" x2="10" y2="16" stroke="#FFF" stroke-width="1.5" />
+        <line x1="12" y1="16" x2="16.5" y2="16" stroke="#2DD4BF" stroke-width="1.5" />
+        <circle cx="16" cy="10" r="1.2" fill="#FBBF24" stroke="none" />
+      </svg>
+    </div>
+
     <!-- Default Fallback -->
     <div v-else class="w-full h-full rounded-xl bg-bg-surface border border-brand/50 flex items-center justify-center text-accent-teal-light font-mono font-bold text-xs">
       &lt;/&gt;
