@@ -20,9 +20,14 @@
       <!-- Projects Grid -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
         <ProjectCard 
-          v-for="project in projects" 
+          v-for="(project, index) in projects" 
           :key="project.id" 
           :project="project"
+          :class="[
+            index === projects.length - 1 && projects.length % 2 !== 0 
+              ? 'md:col-span-2' 
+              : ''
+          ]"
           @open-detail="handleOpenDetail"
         />
       </div>
